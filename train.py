@@ -58,7 +58,7 @@ tokenizer = AutoTokenizer.from_pretrained(
 #    'Qwen/Qwen1.5-1.8B-Chat',
 #   trust_remote_code=True
 #)
-model = AutoModel.from_pretrained(local_model_path, local_files_only=True)
+model = AutoModelForCausalLM.from_pretrained(local_model_path, local_files_only=True)
 # 3. 配置 LoRA
 peft_config = LoraConfig(
     task_type=TaskType.CAUSAL_LM,

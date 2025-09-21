@@ -1,0 +1,6 @@
+torch~=2.8.0+cu128
+transformers~=4.56.2
+peft~=0.17.1
+modelscope~=1.30.0
+addict~=2.4.0
+datasets~=3.3.2
