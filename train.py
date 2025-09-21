@@ -69,8 +69,8 @@ peft_config = LoraConfig(
     target_modules=["q_proj","v_proj"],
 )
 
-#model = get_peft_model(model, peft_config)
-model.print_trainable_parameters()
+model = get_peft_model(model, peft_config)
+#model.print_trainable_parameters()
 
 # 4. 数据预处理
 def format_example(example):
